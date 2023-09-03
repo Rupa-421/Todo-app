@@ -1,0 +1,11 @@
+<div class="container">
+  <input type="text" placeholder="New task" [(ngModel)]="toDo" (keyup.enter)="onAdd()" required />
+  <button
+    type="submit"
+    class="btn btn-primary"
+    [disabled]="toDo && toDo.trim().length > 0 ? false : true "
+    (click)="onAdd()"
+  >
+    Add Task 
+  </button>
+</div>
