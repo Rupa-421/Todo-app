@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,7 +11,7 @@ import { TodoListComponent } from './Components/todo-list/todo-list.component';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, TodoAddComponent, TodoListComponent],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule,DragDropModule],
   providers: [],
   bootstrap: [AppComponent],
 })

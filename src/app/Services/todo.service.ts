@@ -31,4 +31,9 @@ export class TodoService {
     }
     
   }
+  replace(previndex:number,curindex:number){
+ const temp=this.listOfTodos[previndex];
+ this.listOfTodos[previndex]=this.listOfTodos[curindex];
+ this.listOfTodos[curindex]=temp;
+  }
 }
