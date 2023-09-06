@@ -21,7 +21,7 @@
     <div class="wrapper" *ngFor="let list of listOfTodos;let i=index;">
       <div class="card" *ngIf="list.checked==true">
         <input type="checkbox"  [(ngModel)]="list.checked" >
-        <span>{{ list.value }}</span>
+        <span><s>{{ list.value }}</s></span>
         <div class="arrows">
           <span ><button class="arrow" (click)="moveUp(i)">&#x2B06;</button></span>
           <span ><button class="arrow" (click)="moveDown(i)">&#x2B07;</button></span>
