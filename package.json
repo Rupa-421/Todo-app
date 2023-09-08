@@ -23,6 +23,7 @@
     "angular-draggable": "^1.0.1",
     "bootstrap": "^5.3.1",
     "dragula": "^3.7.3",
+    "firebase": "^10.3.1",
     "ng2-draggable": "^0.2.2",
     "ng2-dragula": "^5.0.1",
     "rxjs": "~6.6.0",

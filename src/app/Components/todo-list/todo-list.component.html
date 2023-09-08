@@ -12,12 +12,12 @@
       cdkDrag
       (cdkDragStarted)="onDragStarted()"
     >
-      <div class="card" *ngIf="list.checked == false">
+      <div class="card col-12" *ngIf="list.checked == false">
         <input type="checkbox" [(ngModel)]="list.checked" />
-        <input class="element" value="{{ list.value }}" [(ngModel)]="list.value">
+        <input class="element col-7" value="{{ list.value }}" [(ngModel)]="list.value">
         
 
-          <button class="btn btn-danger" (click)="deleteTask(i)">Delete</button>
+          <button class="btn btn-danger col-4" (click)="deleteTask(i)">Delete</button>
      
       </div>
     </div>
