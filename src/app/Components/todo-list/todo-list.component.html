@@ -14,7 +14,7 @@
     >
       <div class="card" *ngIf="list.checked == false">
         <input type="checkbox" [(ngModel)]="list.checked" />
-        <span>{{ list.value }}</span>
+        <input class="element" value="{{ list.value }}" [(ngModel)]="list.value">
         
 
           <button class="btn btn-danger" (click)="deleteTask(i)">Delete</button>
@@ -42,7 +42,7 @@
         <span
           ><s>{{ list.value }}</s></span
         >
-        
+     
 
           <button class="btn btn-danger" (click)="deleteTask(i)">Delete</button>
         

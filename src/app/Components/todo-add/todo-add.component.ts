@@ -12,10 +12,9 @@ export class TodoAddComponent implements OnInit {
 
   ngOnInit(): void {}
   onAdd() {
-    if(this.toDo.trim().length>0){
+    if (this.toDo.trim().length > 0) {
       this.todoService.addTask(this.toDo);
       this.toDo = '';
     }
-  
   }
 }

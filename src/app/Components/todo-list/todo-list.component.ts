@@ -1,14 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { TodoService } from 'src/app/Services/todo.service';
-import { CdkDrag, CdkDragDrop, CdkDropList, moveItemInArray } from '@angular/cdk/drag-drop';
+import {
+  CdkDrag,
+  CdkDragDrop,
+  CdkDropList,
+  moveItemInArray,
+} from '@angular/cdk/drag-drop';
 
 @Component({
   selector: 'app-todo-list',
   templateUrl: './todo-list.component.html',
   styleUrls: ['./todo-list.component.scss'],
-
- 
-
 })
 export class TodoListComponent implements OnInit {
   incompleteTasks: any[] = [];
@@ -28,14 +30,16 @@ export class TodoListComponent implements OnInit {
 
   onDrop(event: CdkDragDrop<any[]>) {
     if (event.previousContainer === event.container) {
-      moveItemInArray(this.listOfTodos, event.previousIndex, event.currentIndex);
-     
+      moveItemInArray(
+        this.listOfTodos,
+        event.previousIndex,
+        event.currentIndex,
+      );
     } else {
-      console.log("this is called");
+      console.log('this is called');
       // Handle items dropped from one container to another
     }
   }
-  
 
   onDragStarted() {
     this.isDragging = true;
